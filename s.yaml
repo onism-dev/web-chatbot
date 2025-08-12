@@ -31,7 +31,7 @@ resources:
           path: ./code  
     props:
       region: ${vars.region} # 关于变量的使用方法，可以参考：https://docs.serverless-devs.com/user-guide/spec/#_3
-      functionName: webchat-bot-yq96
+      functionName: webchat-bot-dh1y
       description: "web-chatbot"
       code: ./code
       memorySize: 128
@@ -39,8 +39,9 @@ resources:
       runtime: custom
       environmentVariables:
         STATIC_DIR: /public
-        BAILIAN_APP_ID: 9c28e76f4d1a40ea8351a27d0c98d23a
-        BAILIAN_API_KEY: sk-4962bb75201c45959f53b3bda82689d7
+        REGION_NAME: cn-hangzhou
+        BAILIAN_APP_ID: de9fda74d14f42b98e7480685896c041
+        BAILIAN_API_KEY: sk-56517b69a4834a45b598384b7d54e925
         PATH: >-
           /opt/nodejs16/bin:/usr/local/bin/apache-maven/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/ruby/bin:/opt/bin:/code:/code/bin
         NODE_PATH: /opt/nodejs/node_modules

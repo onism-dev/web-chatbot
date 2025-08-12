@@ -17,7 +17,7 @@ name: web-chatbot
 access: imbolo
 
 vars: # 全局变量
-  region: cn-hangzhou
+  region: ap-southeast-1
 
 resources:
   framework:
@@ -39,7 +39,6 @@ resources:
       runtime: custom
       environmentVariables:
         STATIC_DIR: /public
-        REGION_NAME: {{region}}
         BAILIAN_APP_ID: {{bailian_app_id}}
         BAILIAN_API_KEY: {{bailian_api_key}}
         PATH: >-
